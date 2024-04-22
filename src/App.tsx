@@ -1,15 +1,20 @@
-import { useState } from 'react'
 import './App.css'
+import Game2048 from './components/game2048/Game2048'
+import GameMemoryGame from './components/memory-game/GameMemoryGame'
+import GameSudoku from './components/sudoku/GameSudoku'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div className='wrapper'>
         <h1>Mini games</h1>
+        <Game2048 />
+        <GameMemoryGame />
+        <GameSudoku />
+
       </div>
-      
     </>
   )
 }
